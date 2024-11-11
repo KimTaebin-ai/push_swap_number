@@ -116,9 +116,9 @@ void div_over_hundred(t_stack *a_stack, t_stack *b_stack)
     int pivot[4];
     int asize = a_stack->size;
     pivot[0] = set_pivot(a_stack, 0);
-    pivot[0] = set_pivot(a_stack, 1);
-    pivot[0] = set_pivot(a_stack, 2);
-    pivot[0] = set_pivot(a_stack, 3);
+    pivot[1] = set_pivot(a_stack, 1);
+    pivot[2] = set_pivot(a_stack, 2);
+    pivot[3] = set_pivot(a_stack, 3);
 
     while (asize--)
     {

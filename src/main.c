@@ -40,7 +40,7 @@ void convert(t_stack *a_stack, char *str)
             i++;
         while (str[i + j] != '\0' && str[i + j != ' '])
             j++;
-        num = ft_atoi(&str[i], j);
+        num = ftpw_atoi(&str[i], j);
         push_bottom(a_stack, num);
         i = i + j;
         i++;

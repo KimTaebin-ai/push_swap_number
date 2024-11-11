@@ -28,6 +28,7 @@ void err_message(const char *message);
 void clear(t_stack *list);
 
 // stack utils
+int ftpw_atoi(char *str, int len);
 t_stack *stack_init(void);
 t_node *getnode(int data);
 void push_top(t_stack *list, int data);
