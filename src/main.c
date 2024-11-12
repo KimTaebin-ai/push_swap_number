@@ -38,7 +38,7 @@ void convert(t_stack *a_stack, char *str)
         j = 0;
         while (str[i] == ' ')
             i++;
-        while (str[i + j] != '\0' && str[i + j != ' '])
+        while (str[i + j] != '\0' && str[i + j] != ' ')
             j++;
         num = ftpw_atoi(&str[i], j);
         push_bottom(a_stack, num);
@@ -50,7 +50,7 @@ void convert(t_stack *a_stack, char *str)
 void arg_convert(int argc, char *argv[], t_stack *a_stack)
 {
     int i = 1;
-    int len;
+    int len = 0;
 
     while (i < argc)
     {
